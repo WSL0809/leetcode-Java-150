@@ -6,4 +6,9 @@ public class Utils {
         nums[i] = nums[j];
         nums[j] = t;
     }
+    public static void del(int[] nums, int index){
+        for (int i = index; i < nums.length - 1; i++) {
+            nums[i] = nums[i + 1];
+        }
+    }
 }
