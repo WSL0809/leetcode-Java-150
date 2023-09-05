@@ -7,6 +7,6 @@ public class testRemoveDuplicates {
     @Test
     public void test() {
         int[] nums = {1,1,2};
-        System.out.println(removeDuplicates.removeDuplicates1(nums));
+        System.out.println(removeDuplicates.removeDuplicates2(nums));
     }
 }

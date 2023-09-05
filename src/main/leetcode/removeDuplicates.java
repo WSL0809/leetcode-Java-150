@@ -17,7 +17,6 @@ public class removeDuplicates {
                 System.out.println(Arrays.toString(nums));
             }
             i++;
-
         }
         Arrays.sort(nums);
         System.out.println(Arrays.toString(nums));
@@ -25,5 +24,19 @@ public class removeDuplicates {
             count++;
         }
         return count;
+    }
+
+    // 双指针 快慢指针
+    public static int removeDuplicates2(int[] nums) {
+        int i = 1, j = 1;
+        while (j < nums.length) {
+            if (nums[j] != nums[j - 1]) {
+                nums[i] = nums[j];
+                i++;
+            }
+            j++;
+        }
+        System.out.println(Arrays.toString(nums));
+        return i;
     }
 }
